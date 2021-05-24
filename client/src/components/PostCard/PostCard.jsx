@@ -10,7 +10,9 @@ const PostCard = (props) => {
           src={props.imgURL}
           alt={props.author}
         />
-        <div>View</div>
+        <div className="post-title">{props.title}</div>
+        <div className="post-author">{props.author}</div>
+        <div className="post-date">{props.date}</div>
       </Link>
     </div>
   );
