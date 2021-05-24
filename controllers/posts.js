@@ -35,13 +35,13 @@ export const createPost = async (req, res) => {
   }
 }
 
-export const updateProduct = async (req, res) => {
+export const updatePost = async (req, res) => {
   const { id } = req.params
   const post = await Post.findByIdAndUpdate(id, req.body, { new: true })
   res.status(200).json(post)
 }
 
-export const deleteProduct = async (req, res) => {
+export const deletePost = async (req, res) => {
   try {
     const { id } = req.params
     const deleted = await Post.findByIdAndDelete(id)
