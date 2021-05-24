@@ -13,7 +13,6 @@ const PostCreate = (props) => {
     date: "",
   });
 
-  const [isPost, setPost] = useState(false);
   const [isCreated, setCreated] = useState(false);
 
   const handleChange = (event) => {
