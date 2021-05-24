@@ -52,6 +52,14 @@ const PostCreate = (props) => {
                     name='date'
                     required
                     onChange={handleChange}
+          />
+          <input
+                    className="author"
+                    placeholder='Author'
+                    value={post.author}
+                    name='author'
+                    required
+                    onChange={handleChange}
                 />
                 <textarea
                     className="textarea-content"
