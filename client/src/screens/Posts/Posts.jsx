@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import './Products.css'
+import './Posts.css'
 
-import Post from "../..components/Post/Post"
+import Post from "../../components/Post/Post"
 import Layout from "../../components/Layout/Layout"
-import { getPosts } from "../..services/posts"
+import { getPosts } from "../../services/posts"
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
@@ -32,7 +32,6 @@ const Posts = () => {
  
         />
           )
-
 })}
       </div>
   </Layout>

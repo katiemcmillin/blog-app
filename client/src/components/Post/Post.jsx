@@ -15,4 +15,4 @@ const Post = (props) => {
   );
 };
 
-export default Product;
+export default Post;

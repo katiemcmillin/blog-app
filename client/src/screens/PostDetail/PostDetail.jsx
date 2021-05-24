@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./PostDetail.css";
 import Layout from "../../components/Layout/Layout";
-import { getProduct, deleteProduct } from "../../services/products";
+import { getPost, deletePost } from "../../services/posts";
 import { useParams, Link } from "react-router-dom";
 
 const PostDetail = (props) => {
@@ -38,7 +38,7 @@ const PostDetail = (props) => {
             </button>
             <button
               className="delete-button"
-              onClick={() => deleteProduct(post._id)}
+              onClick={() => deletePost(post._id)}
             >
               Delete
             </button>
