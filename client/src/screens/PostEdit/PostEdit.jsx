@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./PostEdit.css";
 import { useParams, Redirect } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
-import { getProduct, updateProduct } from "../../services/products";
+import { getPost, updatePost } from "../../services/posts";
 
 const PostEdit = (props) => {
   const [post, setPost] = useState({
@@ -34,7 +34,7 @@ const PostEdit = (props) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const updated = await updateProduct(id, post);
+    const updated = await updatePost(id, post);
     setUpdated(updated);
   };
 
