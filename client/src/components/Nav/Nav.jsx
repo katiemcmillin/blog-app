@@ -6,16 +6,14 @@ const Nav = () => {
     <nav>
       <div className="nav">
         <NavLink className="logo" to="/">
-          PostsApp
+          bLOGgy
         </NavLink>
-        <div className="links">
           <NavLink className="link" to="/">
             Posts
           </NavLink>
           <NavLink className="link" to="/add-post">
             Add Post
           </NavLink>
-        </div>
       </div>
     </nav>
   );
