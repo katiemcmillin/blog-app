@@ -53,7 +53,7 @@ const PostCreate = (props) => {
           onChange={handleChange}
         />
         <input
-          className="author"
+          className="input-author"
           placeholder="Author"
           value={post.author}
           name="author"

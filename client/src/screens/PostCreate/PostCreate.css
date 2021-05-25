@@ -1,0 +1,53 @@
+.create-form {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+input,
+.textarea-content {
+  font-size: 48px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  text-align: center;
+}
+
+.textarea-content {
+  font-size: 24px;
+}
+
+.input-name {
+  font-size: 48px;
+}
+
+.input-date {
+  font-size: 24px;
+}
+
+.input-author {
+  font-size: 24px;
+}
+
+.input-image-link {
+  font-size: 18px;
+}
+
+.submit-button {
+  font-size: 22px;
+  height: 40px;
+  color: white;
+  background-color: teal;
+  text-align: center;
+  padding: 0;
+}
+
+@media (max-width: 500px) {
+  .create-form {
+    padding-top: 150px;
+  }
+}
