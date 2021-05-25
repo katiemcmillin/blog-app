@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Kalam&display=swap");
+
+nav {
+  flex: 1;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  background-color: #D3DCE6;
+  display: flex;
+  padding: 26px 0;
+  box-shadow: 0px 5px 30px 1px #010101;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.logo {
+  font-family: "Kalam", cursive;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: .5px;
+  flex: 1;
+  max-width: 30vw;
+  transition: 250ms all;
+}
+
+.link:hover,
+.logo:hover {
+  transform: scale(1.25);
+}
+
+.link {
+  transition: 250ms all;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 0px;
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #273444;
+}
+
+@media (max-width: 500px) {
+  nav {
+    width: 98%;
+  }
+  .logo {
+    max-width: 50%;
+  }
+}
