@@ -1,0 +1,22 @@
+.posts {
+  /* width: 90vw; */
+  flex-direction: column;
+  text-align: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+select {
+  cursor:pointer;
+  border: none;
+  font-size: 18px;
+}
+
+@media (max-width: 500px) {
+  .posts {
+      width: 100%;
+      justify-content: space-around;
+  }
+  
+}

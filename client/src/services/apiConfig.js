@@ -4,7 +4,7 @@ let apiUrl
 
 const apiUrls = {
     production: 'https://blog-app-room-4.herokuapp.com/',
-    development: 'http://localhost:3000/api'
+    development: 'http://localhost:3000/'
 }
 
 if (window.location.hostname === 'localhost') {
